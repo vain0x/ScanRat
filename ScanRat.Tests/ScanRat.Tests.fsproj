@@ -7,14 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FsUnit" Version="3.1.0" />
     <PackageReference Include="nunit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="UnitTest1.fs"/>
-    <Compile Include="Program.fs"/>
+    <Compile Include="TestGrammars.fs" />
+    <Compile Include="PrimitiveTests.fs" />
+    <Compile Include="BuilderTests.fs" />
+    <Compile Include="CalculatorTests.fs" />
+    <Compile Include="EdgeCaseTests.fs" />
+    <Compile Include="ErrorHandlingTests.fs" />
+    <Compile Include="LogicalPerformanceTests.fs" />
+    <Compile Include="PerformanceTests.fs" />
+    <Compile Include="FSharpTests.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScanRat\ScanRat.fsproj" />
   </ItemGroup>
 
 </Project>

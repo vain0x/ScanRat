@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="FsUnitPolyfills.fs" />
     <Compile Include="TestGrammars.fs" />
     <Compile Include="PrimitiveTests.fs" />
     <Compile Include="BuilderTests.fs" />
